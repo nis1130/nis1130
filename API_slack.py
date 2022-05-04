@@ -2,7 +2,7 @@
 #-*- cording: utf-8 -*-
 
 import requests
-import monitoring
+import monitoring_color
 
 def post_message(token, channel, text):
     response = requests.post("https://slack.com/api/chat.postMessage",
@@ -11,7 +11,7 @@ def post_message(token, channel, text):
     )
     print(response)
  
-myToken = "xoxb-3458070245654-3488535597200-HRY7rvaCg3NarNMXMMGRLo18"
+myToken = "xoxb-3458070245654-3488535597200-ssdwF1Y31ioTc1HmCwDBR71h"
  
-post_message(myToken,"#monitoring",monitoring.check('/var/log/syslog.1','Error'))
+post_message(myToken,"#monitoring",monitoring_color.check('/var/log/syslog.1','Fail'))
 
