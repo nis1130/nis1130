@@ -24,7 +24,7 @@ Here are some ideas to get you started:
 
 ## Ubuuntu 서버 명령어 
 - (*추가)한국 기준으로 서버 시간 설정: sudo ln -sf /usr/share/zoneinfo/Asia/Seoul /etc/localtime
-- 실행 : python3 API_slack.py , ./API_slack.py
+- 실행 : python3 API_slack.py or ./API_slack.py
 - sudo apt-get update
 
 ### python module 설치
